@@ -1,0 +1,159 @@
+*
+{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+html, body {
+  height: 100%;
+  overflow: hidden;
+}
+
+.content a:active
+{
+  opacity: 0.10;
+}
+
+.container
+{
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+}
+
+.content
+{
+  text-align: center;
+  overflow-y: auto; 
+  max-height: 100vh;
+}
+
+.content h1
+{
+  margin-top: 10px;
+  font-size: 40px;
+  color: #fff;
+  margin-bottom: 3px;
+}
+
+.submitButton
+{
+  background-color: rgba(0, 0, 0, 0);
+  color: white;
+  cursor: pointer;
+  margin-right: 8px;
+  margin-left: 2px;
+  padding-top: 3px;
+  transition: opacity 0.15s;
+  vertical-align: top;
+  border: none;
+}
+
+.submitButton:hover
+{
+  background-color: white;
+  color: black;
+}
+
+.submitButton:active
+{
+  opacity: 0.7s;
+}
+
+.backgroundClip
+{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+@media (min-aspect-ratio:16/9) 
+{
+  .backgroundClip
+  {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-aspect-ratio:16/9)
+{
+  .backgroundClip
+  {
+    width: auto;
+    height: 100%;
+  }
+}
+
+nav
+{
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 15px;
+  box-shadow: 0 0 0px 0px rgba(0, 0, 0, 0.6);
+}
+
+.navBar
+{
+  display: inline-block;
+}
+
+.navName
+{
+  display: inline-block;
+  margin: 0;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  position: relative;
+  top: -15px;
+  left: 15px;
+}
+
+.js-todo-list {
+  max-height: 60vh; 
+  overflow-y: auto; 
+}
+
+.js-todo-list p {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.todo-text {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.todo-time {
+  font-size: 12px;
+  color: grey;
+  margin-right: 15px;
+}
+
+.js-todo-list button {
+  background-color: #f44336;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  margin-left: 5px;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.js-todo-list button:hover {
+  background-color: #d32f2f;
+}
+
+.js-todo-list button:active {
+  background-color: #b71c1c;
+}
